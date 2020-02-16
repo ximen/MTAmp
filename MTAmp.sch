@@ -1,4 +1,935 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RF_Module:ESP32-WROOM-32 U?
+U 1 1 5E444223
+P 8650 3450
+F 0 "U?" H 8650 5031 50  0000 C CNN
+F 1 "ESP32-WROOM-32" H 8650 4940 50  0000 C CNN
+F 2 "RF_Module:ESP32-WROOM-32" H 8650 1950 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 8350 3500 50  0001 C CNN
+	1    8650 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 5E447545
+P 8650 4850
+F 0 "#PWR?" H 8650 4600 50  0001 C CNN
+F 1 "GNDD" H 8654 4695 50  0000 C CNN
+F 2 "" H 8650 4850 50  0001 C CNN
+F 3 "" H 8650 4850 50  0001 C CNN
+	1    8650 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E447BA9
+P 8650 2050
+F 0 "#PWR?" H 8650 1900 50  0001 C CNN
+F 1 "+3V3" H 8665 2223 50  0000 C CNN
+F 2 "" H 8650 2050 50  0001 C CNN
+F 3 "" H 8650 2050 50  0001 C CNN
+	1    8650 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E44A078
+P 9900 4250
+F 0 "#PWR?" H 9900 4100 50  0001 C CNN
+F 1 "+3V3" H 9915 4423 50  0000 C CNN
+F 2 "" H 9900 4250 50  0001 C CNN
+F 3 "" H 9900 4250 50  0001 C CNN
+	1    9900 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E44B75D
+P 9900 4400
+F 0 "C?" H 10015 4446 50  0000 L CNN
+F 1 "10u" H 10015 4355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9938 4250 50  0001 C CNN
+F 3 "~" H 9900 4400 50  0001 C CNN
+	1    9900 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 5E44C00F
+P 9900 4550
+F 0 "#PWR?" H 9900 4300 50  0001 C CNN
+F 1 "GNDD" H 9904 4395 50  0000 C CNN
+F 2 "" H 9900 4550 50  0001 C CNN
+F 3 "" H 9900 4550 50  0001 C CNN
+	1    9900 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5E44CB98
+P 7900 2025
+F 0 "R?" H 7968 2071 50  0000 L CNN
+F 1 "10k" H 7968 1980 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7940 2015 50  0001 C CNN
+F 3 "~" H 7900 2025 50  0001 C CNN
+	1    7900 2025
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5E44E19A
+P 9450 2050
+F 0 "R?" H 9518 2096 50  0000 L CNN
+F 1 "10k" H 9518 2005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 9490 2040 50  0001 C CNN
+F 3 "~" H 9450 2050 50  0001 C CNN
+	1    9450 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5E44EB30
+P 9825 3425
+F 0 "R?" H 9893 3471 50  0000 L CNN
+F 1 "10k" H 9893 3380 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 9865 3415 50  0001 C CNN
+F 3 "~" H 9825 3425 50  0001 C CNN
+	1    9825 3425
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5E44F0B7
+P 10100 3425
+F 0 "R?" H 10168 3471 50  0000 L CNN
+F 1 "10k" H 10168 3380 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 10140 3415 50  0001 C CNN
+F 3 "~" H 10100 3425 50  0001 C CNN
+	1    10100 3425
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E44FF15
+P 9450 1900
+F 0 "#PWR?" H 9450 1750 50  0001 C CNN
+F 1 "+3V3" H 9465 2073 50  0000 C CNN
+F 2 "" H 9450 1900 50  0001 C CNN
+F 3 "" H 9450 1900 50  0001 C CNN
+	1    9450 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E450537
+P 9825 3275
+F 0 "#PWR?" H 9825 3125 50  0001 C CNN
+F 1 "+3V3" H 9840 3448 50  0000 C CNN
+F 2 "" H 9825 3275 50  0001 C CNN
+F 3 "" H 9825 3275 50  0001 C CNN
+	1    9825 3275
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E4509A1
+P 10100 3275
+F 0 "#PWR?" H 10100 3125 50  0001 C CNN
+F 1 "+3V3" H 10115 3448 50  0000 C CNN
+F 2 "" H 10100 3275 50  0001 C CNN
+F 3 "" H 10100 3275 50  0001 C CNN
+	1    10100 3275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 2250 9450 2250
+Wire Wire Line
+	8050 2250 7900 2250
+Wire Wire Line
+	7900 2250 7900 2175
+Wire Wire Line
+	9825 3650 9825 3575
+Wire Wire Line
+	10100 3750 10100 3575
+Wire Wire Line
+	10325 3750 10100 3750
+Connection ~ 10100 3750
+Wire Wire Line
+	10325 3650 9825 3650
+Connection ~ 9825 3650
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5E454A67
+P 9850 2250
+F 0 "SW?" H 9850 2535 50  0000 C CNN
+F 1 "SW_Push" H 9850 2444 50  0000 C CNN
+F 2 "" H 9850 2450 50  0001 C CNN
+F 3 "~" H 9850 2450 50  0001 C CNN
+	1    9850 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5E4553EB
+P 7550 2250
+F 0 "SW?" H 7550 2535 50  0000 C CNN
+F 1 "SW_Push" H 7550 2444 50  0000 C CNN
+F 2 "" H 7550 2450 50  0001 C CNN
+F 3 "~" H 7550 2450 50  0001 C CNN
+	1    7550 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 5E4556BA
+P 10125 2325
+F 0 "#PWR?" H 10125 2075 50  0001 C CNN
+F 1 "GNDD" H 10129 2170 50  0000 C CNN
+F 2 "" H 10125 2325 50  0001 C CNN
+F 3 "" H 10125 2325 50  0001 C CNN
+	1    10125 2325
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 5E455D2D
+P 7225 2325
+F 0 "#PWR?" H 7225 2075 50  0001 C CNN
+F 1 "GNDD" H 7229 2170 50  0000 C CNN
+F 2 "" H 7225 2325 50  0001 C CNN
+F 3 "" H 7225 2325 50  0001 C CNN
+	1    7225 2325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 2250 7225 2250
+Wire Wire Line
+	7225 2250 7225 2325
+Wire Wire Line
+	7750 2250 7900 2250
+Connection ~ 7900 2250
+Wire Wire Line
+	9450 2250 9450 2200
+Wire Wire Line
+	9650 2250 9450 2250
+Connection ~ 9450 2250
+Wire Wire Line
+	10125 2325 10125 2250
+Wire Wire Line
+	10125 2250 10050 2250
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E45820E
+P 7900 1875
+F 0 "#PWR?" H 7900 1725 50  0001 C CNN
+F 1 "+3V3" H 7915 2048 50  0000 C CNN
+F 2 "" H 7900 1875 50  0001 C CNN
+F 3 "" H 7900 1875 50  0001 C CNN
+	1    7900 1875
+	1    0    0    -1  
+$EndComp
+Text GLabel 9250 3950 2    50   Input ~ 0
+SD1
+Text GLabel 9250 4050 2    50   Input ~ 0
+SD2
+Text GLabel 10325 3650 2    50   Input ~ 0
+SDA
+Text GLabel 10325 3750 2    50   Input ~ 0
+SCL
+Text GLabel 9250 2350 2    50   Input ~ 0
+TX
+Text GLabel 9250 2550 2    50   Input ~ 0
+RX
+Text GLabel 9250 3050 2    50   Input ~ 0
+MT_Data
+Text GLabel 9250 2850 2    50   Input ~ 0
+MT_Reset
+Text GLabel 9250 2950 2    50   Input ~ 0
+MT_STB
+Text GLabel 9250 3150 2    50   Input ~ 0
+MT_AX0
+Wire Wire Line
+	9250 3650 9825 3650
+Wire Wire Line
+	9250 3750 10100 3750
+Text GLabel 9250 3250 2    50   Input ~ 0
+MT_AX1
+Text GLabel 9250 3350 2    50   Input ~ 0
+MT_AY0
+Text GLabel 9250 3450 2    50   Input ~ 0
+MT_AY1
+Text GLabel 9250 3550 2    50   Input ~ 0
+MT_AY2
+$Comp
+L parts:MT8806AP U?
+U 1 1 5E46ABCB
+P 2150 6175
+F 0 "U?" H 2125 6940 50  0000 C CNN
+F 1 "MT8806AP" H 2125 6849 50  0000 C CNN
+F 2 "Package_LCC:PLCC-28" H 2150 6900 50  0001 C CNN
+F 3 "" H 2150 6900 50  0001 C CNN
+	1    2150 6175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5E46B97A
+P 3075 6750
+F 0 "R?" H 3143 6796 50  0000 L CNN
+F 1 "10k" H 3143 6705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3115 6740 50  0001 C CNN
+F 3 "~" H 3075 6750 50  0001 C CNN
+	1    3075 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5E46C5D2
+P 3350 6750
+F 0 "R?" H 3418 6796 50  0000 L CNN
+F 1 "10k" H 3418 6705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3390 6740 50  0001 C CNN
+F 3 "~" H 3350 6750 50  0001 C CNN
+	1    3350 6750
+	1    0    0    -1  
+$EndComp
+Text GLabel 1650 5875 0    50   Input ~ 0
+MT_In1
+Text GLabel 1650 5775 0    50   Input ~ 0
+MT_In2
+Text GLabel 1650 5675 0    50   Input ~ 0
+MT_In3
+Text GLabel 2600 6875 2    50   Input ~ 0
+MT_In4
+Text GLabel 2600 6775 2    50   Input ~ 0
+MT_In5
+Text GLabel 2600 6675 2    50   Input ~ 0
+MT_In6
+Text GLabel 2600 6575 2    50   Input ~ 0
+MT_In7
+Text GLabel 2600 6475 2    50   Input ~ 0
+MT_In8
+Text GLabel 1650 6275 0    50   Input ~ 0
+MT_Out1
+Text GLabel 1650 6475 0    50   Input ~ 0
+MT_Out2
+Text GLabel 1650 6675 0    50   Input ~ 0
+MT_Out3
+Text GLabel 1650 6875 0    50   Input ~ 0
+MT_Out4
+$Comp
+L power:GNDA #PWR?
+U 1 1 5E46E970
+P 1550 7100
+F 0 "#PWR?" H 1550 6850 50  0001 C CNN
+F 1 "GNDA" H 1555 6927 50  0000 C CNN
+F 2 "" H 1550 7100 50  0001 C CNN
+F 3 "" H 1550 7100 50  0001 C CNN
+	1    1550 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5E46F186
+P 2675 7100
+F 0 "#PWR?" H 2675 6850 50  0001 C CNN
+F 1 "GNDA" H 2680 6927 50  0000 C CNN
+F 2 "" H 2675 7100 50  0001 C CNN
+F 3 "" H 2675 7100 50  0001 C CNN
+	1    2675 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2675 7100 2675 6975
+Wire Wire Line
+	2675 6975 2600 6975
+Wire Wire Line
+	1550 7100 1550 6975
+Wire Wire Line
+	1550 6975 1650 6975
+Wire Wire Line
+	2600 6275 3350 6275
+Wire Wire Line
+	3350 6275 3350 6600
+Wire Wire Line
+	2600 6375 3075 6375
+Wire Wire Line
+	3075 6375 3075 6600
+Text GLabel 3425 6275 2    50   Input ~ 0
+MT_STB
+Wire Wire Line
+	3425 6275 3350 6275
+Connection ~ 3350 6275
+Wire Wire Line
+	3425 6375 3075 6375
+Connection ~ 3075 6375
+Text GLabel 3425 6375 2    50   Input ~ 0
+MT_Resest
+$Comp
+L power:GNDD #PWR?
+U 1 1 5E472BEC
+P 3350 6900
+F 0 "#PWR?" H 3350 6650 50  0001 C CNN
+F 1 "GNDD" H 3354 6745 50  0000 C CNN
+F 2 "" H 3350 6900 50  0001 C CNN
+F 3 "" H 3350 6900 50  0001 C CNN
+	1    3350 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 5E473147
+P 3075 6900
+F 0 "#PWR?" H 3075 6650 50  0001 C CNN
+F 1 "GNDD" H 3079 6745 50  0000 C CNN
+F 2 "" H 3075 6900 50  0001 C CNN
+F 3 "" H 3075 6900 50  0001 C CNN
+	1    3075 6900
+	1    0    0    -1  
+$EndComp
+Text GLabel 1650 6175 0    50   Input ~ 0
+MT_Data
+Text GLabel 1650 6375 0    50   Input ~ 0
+MT_AX0
+Text GLabel 1625 6575 0    50   Input ~ 0
+MT_AX1
+$Comp
+L power:+12V #PWR?
+U 1 1 5E473D94
+P 1150 6675
+F 0 "#PWR?" H 1150 6525 50  0001 C CNN
+F 1 "+12V" H 1165 6848 50  0000 C CNN
+F 2 "" H 1150 6675 50  0001 C CNN
+F 3 "" H 1150 6675 50  0001 C CNN
+	1    1150 6675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 6675 1150 6775
+Wire Wire Line
+	1150 6775 1650 6775
+$Comp
+L power:+12V #PWR?
+U 1 1 5E474C20
+P 2675 5625
+F 0 "#PWR?" H 2675 5475 50  0001 C CNN
+F 1 "+12V" H 2690 5798 50  0000 C CNN
+F 2 "" H 2675 5625 50  0001 C CNN
+F 3 "" H 2675 5625 50  0001 C CNN
+	1    2675 5625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2675 5625 2675 5675
+Wire Wire Line
+	2675 5675 2600 5675
+Text GLabel 2600 5775 2    50   Input ~ 0
+MT_AY0
+Text GLabel 2600 5875 2    50   Input ~ 0
+MT_AY1
+Text GLabel 2600 6175 2    50   Input ~ 0
+MT_AY2
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5E47729F
+P 1700 1175
+F 0 "J?" H 1780 1167 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 1780 1076 50  0000 L CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_2-G-5,08_1x02_P5.08mm_Horizontal" H 1700 1175 50  0001 C CNN
+F 3 "~" H 1700 1175 50  0001 C CNN
+	1    1700 1175
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D_TVS D?
+U 1 1 5E48DD24
+P 2450 1325
+F 0 "D?" V 2404 1404 50  0000 L CNN
+F 1 "SMF26A" V 2495 1404 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123F" H 2450 1325 50  0001 C CNN
+F 3 "~" H 2450 1325 50  0001 C CNN
+	1    2450 1325
+	0    1    1    0   
+$EndComp
+$Comp
+L parts:MTDCDC U?
+U 1 1 5E4871A8
+P 4125 1125
+F 0 "U?" H 4125 1440 50  0000 C CNN
+F 1 "MTDCDC" H 4125 1349 50  0000 C CNN
+F 2 "parts:MTDCDC" H 4125 1375 50  0001 C CNN
+F 3 "" H 4125 1375 50  0001 C CNN
+	1    4125 1125
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Fuse F?
+U 1 1 5E487D7C
+P 2175 1075
+F 0 "F?" V 1978 1075 50  0000 C CNN
+F 1 "24E1300A" V 2069 1075 50  0000 C CNN
+F 2 "Fuse:Fuse_2512_6332Metric" V 2105 1075 50  0001 C CNN
+F 3 "~" H 2175 1075 50  0001 C CNN
+	1    2175 1075
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_FET:AO3401A Q?
+U 1 1 5E48ECE1
+P 2925 1175
+F 0 "Q?" V 3267 1175 50  0000 C CNN
+F 1 "AOD403" V 3176 1175 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 3125 1100 50  0001 L CIN
+F 3 "https://datasheet.lcsc.com/szlcsc/Alpha-Omega-Semicon-AOS-AOD403_C28969.pdf" H 2925 1175 50  0001 L CNN
+	1    2925 1175
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5E490DE6
+P 2925 1725
+F 0 "R?" H 2993 1771 50  0000 L CNN
+F 1 "100k" H 2993 1680 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 2965 1715 50  0001 C CNN
+F 3 "~" H 2925 1725 50  0001 C CNN
+	1    2925 1725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:BZT52Bxx D?
+U 1 1 5E491829
+P 3200 1300
+F 0 "D?" V 3154 1379 50  0000 L CNN
+F 1 "BZT52C22S" V 3245 1379 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 3200 1125 50  0001 C CNB
+F 3 "https://datasheet.lcsc.com/szlcsc/1912111437_Shandong-Jingdao-Microelectronics-BZT52C22S_C353547.pdf" H 3200 1300 50  0001 C CNN
+	1    3200 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1900 1075 2025 1075
+Wire Wire Line
+	2325 1075 2450 1075
+Wire Wire Line
+	3125 1075 3200 1075
+Wire Wire Line
+	3200 1150 3200 1075
+Connection ~ 3200 1075
+Wire Wire Line
+	2925 1375 2925 1500
+Wire Wire Line
+	3200 1450 3200 1500
+Wire Wire Line
+	3200 1500 2925 1500
+Connection ~ 2925 1500
+Wire Wire Line
+	2925 1500 2925 1575
+Wire Wire Line
+	2450 1175 2450 1075
+Connection ~ 2450 1075
+Wire Wire Line
+	2450 1075 2725 1075
+Wire Wire Line
+	1900 1175 1900 1875
+Wire Wire Line
+	1900 1875 2450 1875
+Wire Wire Line
+	3825 1875 3825 1225
+Connection ~ 2925 1875
+Wire Wire Line
+	2450 1475 2450 1875
+Connection ~ 2450 1875
+Wire Wire Line
+	2450 1875 2925 1875
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E49E2DB
+P 4525 1050
+F 0 "#PWR?" H 4525 900 50  0001 C CNN
+F 1 "+3V3" H 4540 1223 50  0000 C CNN
+F 2 "" H 4525 1050 50  0001 C CNN
+F 3 "" H 4525 1050 50  0001 C CNN
+	1    4525 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4525 1050 4525 1125
+Wire Wire Line
+	4525 1125 4425 1125
+Wire Wire Line
+	2925 1875 3825 1875
+Wire Wire Line
+	3200 1075 3825 1075
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5E4A3E90
+P 1750 2400
+F 0 "J?" H 1830 2392 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 1830 2301 50  0000 L CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_2-G-5,08_1x02_P5.08mm_Horizontal" H 1750 2400 50  0001 C CNN
+F 3 "~" H 1750 2400 50  0001 C CNN
+	1    1750 2400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Power_Protection:SP0502BAJT D?
+U 1 1 5E4A4E05
+P 2325 2625
+F 0 "D?" H 2530 2671 50  0000 L CNN
+F 1 "SP0502BAJT" H 2530 2580 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 2550 2575 50  0001 L CNN
+F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" H 2450 2750 50  0001 C CNN
+	1    2325 2625
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5E4A733E
+P 1975 2500
+F 0 "#PWR?" H 1975 2250 50  0001 C CNN
+F 1 "GNDA" H 1980 2327 50  0000 C CNN
+F 2 "" H 1975 2500 50  0001 C CNN
+F 3 "" H 1975 2500 50  0001 C CNN
+	1    1975 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5E4A8466
+P 2600 2800
+F 0 "#PWR?" H 2600 2550 50  0001 C CNN
+F 1 "GNDA" H 2605 2627 50  0000 C CNN
+F 2 "" H 2600 2800 50  0001 C CNN
+F 3 "" H 2600 2800 50  0001 C CNN
+	1    2600 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 2300 2600 2300
+Wire Wire Line
+	2600 2800 2600 2725
+Wire Wire Line
+	2600 2725 2525 2725
+Wire Wire Line
+	2525 2525 2600 2525
+Wire Wire Line
+	2600 2525 2600 2300
+Connection ~ 2600 2300
+Wire Wire Line
+	2600 2300 1950 2300
+Wire Wire Line
+	1950 2400 1975 2400
+Wire Wire Line
+	1975 2400 1975 2500
+Text GLabel 2900 2300 2    50   Input ~ 0
+MT_In1
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5E4B319A
+P 1650 3700
+F 0 "J?" H 1730 3692 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 1730 3601 50  0000 L CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_2-G-5,08_1x02_P5.08mm_Horizontal" H 1650 3700 50  0001 C CNN
+F 3 "~" H 1650 3700 50  0001 C CNN
+	1    1650 3700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Power_Protection:SP0502BAJT D?
+U 1 1 5E4B31A4
+P 2225 3925
+F 0 "D?" H 2430 3971 50  0000 L CNN
+F 1 "SP0502BAJT" H 2430 3880 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 2450 3875 50  0001 L CNN
+F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" H 2350 4050 50  0001 C CNN
+	1    2225 3925
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5E4B31AE
+P 1875 3800
+F 0 "#PWR?" H 1875 3550 50  0001 C CNN
+F 1 "GNDA" H 1880 3627 50  0000 C CNN
+F 2 "" H 1875 3800 50  0001 C CNN
+F 3 "" H 1875 3800 50  0001 C CNN
+	1    1875 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5E4B31B8
+P 2500 4100
+F 0 "#PWR?" H 2500 3850 50  0001 C CNN
+F 1 "GNDA" H 2505 3927 50  0000 C CNN
+F 2 "" H 2500 4100 50  0001 C CNN
+F 3 "" H 2500 4100 50  0001 C CNN
+	1    2500 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 3600 2500 3600
+Wire Wire Line
+	2500 4100 2500 4025
+Wire Wire Line
+	2500 4025 2425 4025
+Wire Wire Line
+	2425 3825 2500 3825
+Wire Wire Line
+	2500 3825 2500 3600
+Connection ~ 2500 3600
+Wire Wire Line
+	2500 3600 1850 3600
+Wire Wire Line
+	1850 3700 1875 3700
+Wire Wire Line
+	1875 3700 1875 3800
+Text GLabel 2800 3600 2    50   Input ~ 0
+MT_In3
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5E4B98FC
+P 4575 2425
+F 0 "J?" H 4655 2417 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 4655 2326 50  0000 L CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_2-G-5,08_1x02_P5.08mm_Horizontal" H 4575 2425 50  0001 C CNN
+F 3 "~" H 4575 2425 50  0001 C CNN
+	1    4575 2425
+	-1   0    0    1   
+$EndComp
+$Comp
+L Power_Protection:SP0502BAJT D?
+U 1 1 5E4B9906
+P 5150 2650
+F 0 "D?" H 5355 2696 50  0000 L CNN
+F 1 "SP0502BAJT" H 5355 2605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 5375 2600 50  0001 L CNN
+F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" H 5275 2775 50  0001 C CNN
+	1    5150 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5E4B9910
+P 4800 2525
+F 0 "#PWR?" H 4800 2275 50  0001 C CNN
+F 1 "GNDA" H 4805 2352 50  0000 C CNN
+F 2 "" H 4800 2525 50  0001 C CNN
+F 3 "" H 4800 2525 50  0001 C CNN
+	1    4800 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5E4B991A
+P 5425 2825
+F 0 "#PWR?" H 5425 2575 50  0001 C CNN
+F 1 "GNDA" H 5430 2652 50  0000 C CNN
+F 2 "" H 5425 2825 50  0001 C CNN
+F 3 "" H 5425 2825 50  0001 C CNN
+	1    5425 2825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5725 2325 5425 2325
+Wire Wire Line
+	5425 2825 5425 2750
+Wire Wire Line
+	5425 2750 5350 2750
+Wire Wire Line
+	5350 2550 5425 2550
+Wire Wire Line
+	5425 2550 5425 2325
+Connection ~ 5425 2325
+Wire Wire Line
+	5425 2325 4775 2325
+Wire Wire Line
+	4775 2425 4800 2425
+Wire Wire Line
+	4800 2425 4800 2525
+Text GLabel 5725 2325 2    50   Input ~ 0
+MT_In2
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5E4B992E
+P 4475 3725
+F 0 "J?" H 4555 3717 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 4555 3626 50  0000 L CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_2-G-5,08_1x02_P5.08mm_Horizontal" H 4475 3725 50  0001 C CNN
+F 3 "~" H 4475 3725 50  0001 C CNN
+	1    4475 3725
+	-1   0    0    1   
+$EndComp
+$Comp
+L Power_Protection:SP0502BAJT D?
+U 1 1 5E4B9938
+P 5050 3950
+F 0 "D?" H 5255 3996 50  0000 L CNN
+F 1 "SP0502BAJT" H 5255 3905 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 5275 3900 50  0001 L CNN
+F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" H 5175 4075 50  0001 C CNN
+	1    5050 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5E4B9942
+P 4700 3825
+F 0 "#PWR?" H 4700 3575 50  0001 C CNN
+F 1 "GNDA" H 4705 3652 50  0000 C CNN
+F 2 "" H 4700 3825 50  0001 C CNN
+F 3 "" H 4700 3825 50  0001 C CNN
+	1    4700 3825
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5E4B994C
+P 5325 4125
+F 0 "#PWR?" H 5325 3875 50  0001 C CNN
+F 1 "GNDA" H 5330 3952 50  0000 C CNN
+F 2 "" H 5325 4125 50  0001 C CNN
+F 3 "" H 5325 4125 50  0001 C CNN
+	1    5325 4125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5625 3625 5325 3625
+Wire Wire Line
+	5325 4125 5325 4050
+Wire Wire Line
+	5325 4050 5250 4050
+Wire Wire Line
+	5250 3850 5325 3850
+Wire Wire Line
+	5325 3850 5325 3625
+Connection ~ 5325 3625
+Wire Wire Line
+	5325 3625 4675 3625
+Wire Wire Line
+	4675 3725 4700 3725
+Wire Wire Line
+	4700 3725 4700 3825
+Text GLabel 5625 3625 2    50   Input ~ 0
+MT_In4
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5E4C002E
+P 5075 5175
+F 0 "J?" H 5155 5167 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 5155 5076 50  0000 L CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_2-G-5,08_1x02_P5.08mm_Horizontal" H 5075 5175 50  0001 C CNN
+F 3 "~" H 5075 5175 50  0001 C CNN
+	1    5075 5175
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5E4C0B0C
+P 5075 5500
+F 0 "J?" H 5155 5492 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 5155 5401 50  0000 L CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_2-G-5,08_1x02_P5.08mm_Horizontal" H 5075 5500 50  0001 C CNN
+F 3 "~" H 5075 5500 50  0001 C CNN
+	1    5075 5500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5E4C0E47
+P 5075 5825
+F 0 "J?" H 5155 5817 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 5155 5726 50  0000 L CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_2-G-5,08_1x02_P5.08mm_Horizontal" H 5075 5825 50  0001 C CNN
+F 3 "~" H 5075 5825 50  0001 C CNN
+	1    5075 5825
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5E4C132F
+P 5075 6150
+F 0 "J?" H 5155 6142 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 5155 6051 50  0000 L CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_2-G-5,08_1x02_P5.08mm_Horizontal" H 5075 6150 50  0001 C CNN
+F 3 "~" H 5075 6150 50  0001 C CNN
+	1    5075 6150
+	-1   0    0    1   
+$EndComp
+Text GLabel 5275 5075 2    50   Input ~ 0
+Out1N
+Text GLabel 5275 5175 2    50   Input ~ 0
+Out1P
+Text GLabel 5275 5400 2    50   Input ~ 0
+Out2N
+Text GLabel 5275 5500 2    50   Input ~ 0
+Out2P
+Text GLabel 5275 5725 2    50   Input ~ 0
+Out3N
+Text GLabel 5275 5825 2    50   Input ~ 0
+Out3P
+Text GLabel 5275 6050 2    50   Input ~ 0
+Out4N
+Text GLabel 5275 6150 2    50   Input ~ 0
+Out4P
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5E4C485E
+P 10525 5625
+F 0 "J?" H 10605 5617 50  0000 L CNN
+F 1 "Conn_01x04" H 10605 5526 50  0000 L CNN
+F 2 "" H 10525 5625 50  0001 C CNN
+F 3 "~" H 10525 5625 50  0001 C CNN
+	1    10525 5625
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E4C5EB0
+P 10250 5450
+F 0 "#PWR?" H 10250 5300 50  0001 C CNN
+F 1 "+3V3" H 10265 5623 50  0000 C CNN
+F 2 "" H 10250 5450 50  0001 C CNN
+F 3 "" H 10250 5450 50  0001 C CNN
+	1    10250 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 5E4C6D02
+P 10250 5925
+F 0 "#PWR?" H 10250 5675 50  0001 C CNN
+F 1 "GNDD" H 10254 5770 50  0000 C CNN
+F 2 "" H 10250 5925 50  0001 C CNN
+F 3 "" H 10250 5925 50  0001 C CNN
+	1    10250 5925
+	1    0    0    -1  
+$EndComp
+Text GLabel 10325 5625 0    50   Input ~ 0
+RX
+Text GLabel 10325 5725 0    50   Input ~ 0
+TX
+Wire Wire Line
+	10250 5450 10250 5525
+Wire Wire Line
+	10250 5525 10325 5525
+Wire Wire Line
+	10250 5925 10250 5825
+Wire Wire Line
+	10250 5825 10325 5825
 $EndSCHEMATC
