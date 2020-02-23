@@ -1,4 +1,4 @@
-update=20.02.2020 20:37:39
+update=23.02.2020 20:09:30
 version=1
 last_client=kicad
 [general]
@@ -227,7 +227,7 @@ Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default
-Clearance=0.2
+Clearance=0.1
 TrackWidth=0.25
 ViaDiameter=0.8
 ViaDrill=0.4
@@ -249,7 +249,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/2]
 Name=3v3
-Clearance=0.2
+Clearance=0.1
 TrackWidth=0.5
 ViaDiameter=0.8
 ViaDrill=0.4
@@ -261,7 +261,7 @@ dPairViaGap=0.25
 [pcbnew/Netclasses/3]
 Name=HighPwr
 Clearance=0.2
-TrackWidth=1
+TrackWidth=1.5
 ViaDiameter=0.8
 ViaDrill=0.4
 uViaDiameter=0.3
@@ -271,7 +271,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/4]
 Name=IN12
-Clearance=0.2
+Clearance=0.1
 TrackWidth=4.5
 ViaDiameter=0.8
 ViaDrill=0.4
@@ -282,7 +282,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/5]
 Name=InAudio
-Clearance=0.2
+Clearance=0.1
 TrackWidth=0.25
 ViaDiameter=0.8
 ViaDrill=0.4

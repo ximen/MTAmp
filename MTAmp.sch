@@ -96,7 +96,7 @@ U 1 1 5E44E19A
 P 9450 2050
 F 0 "R5" H 9518 2096 50  0000 L CNN
 F 1 "10k" H 9518 2005 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 9490 2040 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 9490 2040 50  0001 C CNN
 F 3 "~" H 9450 2050 50  0001 C CNN
 	1    9450 2050
 	1    0    0    -1  
@@ -191,7 +191,7 @@ F 3 "" H 7900 1875 50  0001 C CNN
 $EndComp
 Text GLabel 9250 3850 2    50   Input ~ 0
 SD1
-Text GLabel 9250 3950 2    50   Input ~ 0
+Text GLabel 9250 3750 2    50   Input ~ 0
 SD2
 Text GLabel 9250 2350 2    50   Input ~ 0
 TX
@@ -241,7 +241,7 @@ U 1 1 5E46C5D2
 P 3350 6750
 F 0 "R3" H 3418 6796 50  0000 L CNN
 F 1 "10k" H 3418 6705 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 3390 6740 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 3390 6740 50  0001 C CNN
 F 3 "~" H 3350 6750 50  0001 C CNN
 	1    3350 6750
 	1    0    0    -1  
@@ -317,7 +317,7 @@ Wire Wire Line
 	3425 6375 3075 6375
 Connection ~ 3075 6375
 Text GLabel 3425 6375 2    50   Input ~ 0
-MT_Resest
+MT_Reset
 $Comp
 L power:GNDD #PWR0113
 U 1 1 5E472BEC
@@ -870,71 +870,49 @@ Wire Wire Line
 	10250 5925 10250 5825
 Wire Wire Line
 	10250 5825 10325 5825
-$Comp
-L Connector_Generic:Conn_02x05_Odd_Even J10
-U 1 1 5E4D815C
-P 6925 4925
-F 0 "J10" H 6975 5342 50  0000 C CNN
-F 1 "AMP1" H 6975 5251 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 6925 4925 50  0001 C CNN
-F 3 "~" H 6925 4925 50  0001 C CNN
-	1    6925 4925
-	1    0    0    -1  
-$EndComp
-Text GLabel 6725 4725 0    50   Input ~ 0
+Text GLabel 6850 4025 0    50   Input ~ 0
 +12V
-Text GLabel 7225 4725 2    50   Input ~ 0
-AGND
-Text GLabel 6725 4825 0    50   Input ~ 0
+Text GLabel 6850 4125 0    50   Input ~ 0
+GNDA
+Text GLabel 6850 4225 0    50   Input ~ 0
 MT_Out1
-Text GLabel 7225 4825 2    50   Input ~ 0
+Text GLabel 6850 4325 0    50   Input ~ 0
 MT_Out2
-Text GLabel 6725 4925 0    50   Input ~ 0
+Text GLabel 6850 4425 0    50   Input ~ 0
 SD1
-Text GLabel 7225 4925 2    50   Input ~ 0
+Text GLabel 6850 4525 0    50   Input ~ 0
 SD2
 Text GLabel 9250 4050 2    50   Input ~ 0
 SD3
 Text GLabel 9250 4150 2    50   Input ~ 0
 SD4
-Text GLabel 6725 5025 0    50   Input ~ 0
+Text GLabel 6850 4625 0    50   Input ~ 0
 Out1P
-Text GLabel 7225 5025 2    50   Input ~ 0
+Text GLabel 6850 4725 0    50   Input ~ 0
 Out1N
-Text GLabel 6725 5125 0    50   Input ~ 0
+Text GLabel 6850 4825 0    50   Input ~ 0
 Out2P
-Text GLabel 7225 5125 2    50   Input ~ 0
+Text GLabel 6850 4925 0    50   Input ~ 0
 Out2N
-$Comp
-L Connector_Generic:Conn_02x05_Odd_Even J11
-U 1 1 5E4E63CB
-P 6950 5825
-F 0 "J11" H 7000 6242 50  0000 C CNN
-F 1 "AMP2" H 7000 6151 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 6950 5825 50  0001 C CNN
-F 3 "~" H 6950 5825 50  0001 C CNN
-	1    6950 5825
-	1    0    0    -1  
-$EndComp
-Text GLabel 6750 5625 0    50   Input ~ 0
+Text GLabel 6850 5300 0    50   Input ~ 0
 +12V
-Text GLabel 7250 5625 2    50   Input ~ 0
-AGND
-Text GLabel 6750 5725 0    50   Input ~ 0
+Text GLabel 6850 5400 0    50   Input ~ 0
+GNDA
+Text GLabel 6850 5500 0    50   Input ~ 0
 MT_Out3
-Text GLabel 7250 5725 2    50   Input ~ 0
+Text GLabel 6850 5600 0    50   Input ~ 0
 MT_Out4
-Text GLabel 6750 5825 0    50   Input ~ 0
+Text GLabel 6850 5700 0    50   Input ~ 0
 SD3
-Text GLabel 7250 5825 2    50   Input ~ 0
+Text GLabel 6850 5800 0    50   Input ~ 0
 SD4
-Text GLabel 6750 5925 0    50   Input ~ 0
+Text GLabel 6850 5900 0    50   Input ~ 0
 Out3P
-Text GLabel 7250 5925 2    50   Input ~ 0
+Text GLabel 6850 6000 0    50   Input ~ 0
 Out3N
-Text GLabel 6750 6025 0    50   Input ~ 0
+Text GLabel 6850 6100 0    50   Input ~ 0
 Out4P
-Text GLabel 7250 6025 2    50   Input ~ 0
+Text GLabel 6850 6200 0    50   Input ~ 0
 Out4N
 Text GLabel 9250 4250 2    50   Input ~ 0
 MT_Out1
@@ -960,4 +938,91 @@ Wire Wire Line
 Connection ~ 3525 1075
 Wire Wire Line
 	3525 1075 3825 1075
+$Comp
+L power:GNDA #PWR0106
+U 1 1 5E526602
+P 1900 1875
+F 0 "#PWR0106" H 1900 1625 50  0001 C CNN
+F 1 "GNDA" H 1905 1702 50  0000 C CNN
+F 2 "" H 1900 1875 50  0001 C CNN
+F 3 "" H 1900 1875 50  0001 C CNN
+	1    1900 1875
+	1    0    0    -1  
+$EndComp
+Connection ~ 1900 1875
+$Comp
+L power:GNDD #PWR0107
+U 1 1 5E527B44
+P 3825 1875
+F 0 "#PWR0107" H 3825 1625 50  0001 C CNN
+F 1 "GNDD" H 3829 1720 50  0000 C CNN
+F 2 "" H 3825 1875 50  0001 C CNN
+F 3 "" H 3825 1875 50  0001 C CNN
+	1    3825 1875
+	1    0    0    -1  
+$EndComp
+Connection ~ 3825 1875
+$Comp
+L Connector_Generic:Conn_01x12 J10
+U 1 1 5E53A3EB
+P 7050 4525
+F 0 "J10" H 7130 4517 50  0000 L CNN
+F 1 "AMP1" H 7130 4426 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x12_P2.54mm_Vertical" H 7050 4525 50  0001 C CNN
+F 3 "~" H 7050 4525 50  0001 C CNN
+	1    7050 4525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x12 J11
+U 1 1 5E53C238
+P 7050 5800
+F 0 "J11" H 7130 5792 50  0000 L CNN
+F 1 "AMP2" H 7130 5701 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x12_P2.54mm_Vertical" H 7050 5800 50  0001 C CNN
+F 3 "~" H 7050 5800 50  0001 C CNN
+	1    7050 5800
+	1    0    0    -1  
+$EndComp
+Text GLabel 6850 6300 0    50   Input ~ 0
++3V3
+Text GLabel 6850 5125 0    50   Input ~ 0
+CONNECTED1
+Text GLabel 6850 5025 0    50   Input ~ 0
++3V3
+Text GLabel 6850 6400 0    50   Input ~ 0
+CONNECTED2
+Text GLabel 8625 5625 0    50   Input ~ 0
++3V3
+Text GLabel 9125 5625 2    50   Input ~ 0
+GNDA
+Text GLabel 8625 5725 0    50   Input ~ 0
+MT_In5
+Text GLabel 9125 5725 2    50   Input ~ 0
+MT_In6
+Text GLabel 8625 5825 0    50   Input ~ 0
+MT_In7
+Text GLabel 9125 5825 2    50   Input ~ 0
+MT_In8
+Text GLabel 9125 5925 2    50   Input ~ 0
+CONNECTED_BT
+Text GLabel 9250 3650 2    50   Input ~ 0
+CONNECTED1
+Text GLabel 8050 3850 0    50   Input ~ 0
+CONNECTED_BT
+Text GLabel 8625 5925 0    50   Input ~ 0
++12V
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J13
+U 1 1 5E541376
+P 8825 5725
+F 0 "J13" H 8875 6042 50  0000 C CNN
+F 1 "BT" H 8875 5951 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 8825 5725 50  0001 C CNN
+F 3 "~" H 8825 5725 50  0001 C CNN
+	1    8825 5725
+	1    0    0    -1  
+$EndComp
+Text GLabel 8050 2550 0    50   Input ~ 0
+CONNECTED2
 $EndSCHEMATC
